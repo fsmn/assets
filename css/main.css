@@ -1,0 +1,167 @@
+@CHARSET "UTF-8";
+
+@import "color.css";
+
+@import "ui.all.css";
+
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+#page {
+	margin-left: auto;
+	margin-right: auto;
+	width: 9in;
+}
+
+#navigation {
+	top: 0;
+	width: 95%;
+	padding: .5em 1em 0 1em;
+	height: 2em;
+	*border-width: 1px;
+	*border-style: solid;
+	margin-bottom: 2em;
+	height: 35px;
+	display: block;
+}
+
+#navigation .button-box {
+	display: block;
+	margin: 6px 0;
+}
+
+#navigation .button-box ul li {
+	padding-left: 0.5em;
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+}
+
+#navigation ul li.site-name {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top:0;
+}
+
+#content {
+	max-width: 500px;
+	margin: 5px;
+	margin-top: 15px;
+}
+
+.button-box {
+	margin: 1em 0;
+	height: 15px;
+}
+
+.button-box ul {
+	margin: 0;
+	padding: 0;
+}
+
+.button-box ul li {
+	display: inline;
+}
+
+.button,.delete {
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	position: static;
+	padding: .25em;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a.button {
+	text-decoration: none;
+}
+
+.delete { /* float: right;*/
+	
+}
+
+.asset_content {
+	display: none;
+}
+
+.asset_legend {
+	cursor: pointer;
+	text-decoration: underline;
+	color: blue;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.pagination {
+	padding-bottom: 1em;
+}
+
+.pagination a,.pagination strong {
+	padding: 4px 7px;
+	text-decoration: none;
+	font-size: 13px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.pagination strong,.pagination a:hover {
+	font-weight: normal;
+}
+
+fieldset.developer_list {
+	margin-top: 1em;
+	width: 25%;
+	min-width: 200px;
+	border-width: 1px;
+}
+
+fieldset.developer_list legend,span.developer_view {
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-weight: bold;
+}
+
+.codeList {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	padding: .5em;
+	padding-left: 1em;
+	width: 90%;
+}
+
+label {
+	font-weight: bold;
+}
+
+.codeHeader {
+	margin-top: 0px;
+	font-weight: bold;
+}
+
+a.no_link {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+legend {
+	font-size: 1.1em;
+	font-weight: bold;
+}

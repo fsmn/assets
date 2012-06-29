@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+body {
+	
+}
+
+#navigation {
+	*background-color: #C7D7E9;
+	*background-image: url(images/ui-bg_highlight-soft_75_c7d7e9_1x100.png);
+	*opacity: .90;
+	*filter: Alpha(Opacity =     90);
+	*background-position-x: 50%;
+	*background-position-y: 50%;
+	*background-repeat: repeat-x;
+	*border-color: transparent;
+}
+
+.button,.help {
+	border: 1px solid #327e04;
+	color: #ffffff;
+	opacity: .90;
+	filter: Alpha(Opacity =                       90);
+	background-color: #67b021;
+	background-image: url(images/button_20.png);
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: repeat-x;
+}
+
+.button:hover {
+	opacity: .90;
+	filter: Alpha(Opacity =                       90);
+	background-color: #91b347;
+	background-image: url(images/button_20_over.png);
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: repeat-x;
+}
+
+.delete {
+	opacity: .90;
+	filter: Alpha(Opacity =                       90);
+	background-color: #E14F1C;
+	background-image: url(images/delete.png);
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: repeat-x;
+	color: white;
+	border: 1px solid #CD0A0A;
+}
+
+.delete:hover {
+	color: black;
+	background-color: white;
+	background-image: url(images/delete_hover.png);
+	background-repeat: repeat-x;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	border: 1px solid #cdcdcd;
+}
+
+.button.new {
+	border: 1px solid #000;
+	background-color: #DFE119;
+	background-image: url(images/new_button.png);
+	color: black;
+	
+}
+
+
+.button.edit {
+	border: 1px solid #0077bd;
+	background-color: #0077bd;
+	background-image: url(images/edit_button.png);
+	color: #fff;
+}
+
+.button.edit:hover {
+	background-color: #6caadc;
+	background-image: url(images/edit_button_hover.png);
+}
+
+.asset_content {
+	
+}
+
+.asset_legend {
+	color: blue;
+}
+
+.bold {
+	
+}
+
+.delete {
+	background-color: red;
+}
+
+.pagination a,.pagination strong {
+	background-color: #C7D7E9;
+	color: black;
+}
+
+.pagination strong,.pagination a:hover {
+	background-color: #2191c0;
+	color: white;
+}
+
+span.developer_view {
+	opacity: .90;
+	filter: Alpha(Opacity =                 90);
+	background-color: #2191c0;
+	background-image: url(images/header_2191c0.png);
+	background-repeat: repeat-x;
+	background-position-y: 50%;
+	color: white;
+}
+
+.codeList {
+	border-color: #aaa;
+}
