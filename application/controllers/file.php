@@ -60,7 +60,7 @@ class File extends CI_Controller {
 	function attach_file()
 	{
 		$config['upload_path'] = site_url("uploads");
-		$config['allowed_types'] = 'gif|jpg|png|pdf';
+		$config['allowed_types'] = 'gif|jpg|png|pdf|docx|doc|xlsx|xls|rtf';
 		$config['max_size'] = '1024';
 		$config['max_width']  = '1024';
 		$config['max_height']  = '768';

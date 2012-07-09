@@ -169,7 +169,7 @@ class Asset extends CI_Controller
 	{
 		$config['upload_path'] = './uploads';
 		$this->load->helper('directory');
-		$config['allowed_types'] = 'gif|jpg|png|pdf|rtf';
+		$config['allowed_types'] = 'gif|jpg|png|pdf|rtf|docx|doc|xlsx|xls';
 		$config['max_size'] = '1000';
 		$config['max_width']  = '1024';
 		$config['max_height']  = '768';
