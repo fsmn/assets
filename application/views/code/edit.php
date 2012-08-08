@@ -18,10 +18,14 @@ if( $code ){
 <label for="value">Value:&nbsp;</label>
 <input type="text" id="value" name="value" value="<? echo getValue($code, 'value');?>" style="width:<? echo $codeFieldLength;?>"/><br/>
 </p>
-<p><span class='button uppercase'>UPPERCASE</span></p>
-<p>
-<span class="button code_save" id="save_<? print getValue($code, 'kCode'); ?>">Save</span></p>
+<div class='button-box'>
+<ul>
+<li><span class='button uppercase'>UPPERCASE</span></li>
+<li>
+<span class="button code_save" id="save_<? print getValue($code, 'kCode'); ?>">Save</span></li>
 	<?php if($saveAction == "save"):?>
-		<p><span class="button delete code_delete">Delete</span></p>
+		<li><span class="button delete code_delete">Delete</span></li>
 	<?php endif;?>
+	</ul>
+	</div>
 </form>
