@@ -82,7 +82,8 @@ a.button {
 	text-decoration: none;
 }
 
-.delete { /* float: right;*/
+.delete { 
+ float: right;
 	
 }
 

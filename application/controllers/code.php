@@ -47,7 +47,7 @@ class Code extends CI_Controller
 			$data['code'] = $code;
 			$data['title'] = "Edit Code";
 			$data['target'] = "code/edit";
-			$data['action'] = "udpate";
+			$data['action'] = "update";
 			$data['kAsset'] = $code->kAsset;
 			$data['codePairs'] = $this->code_model->fetch_type_list();
 			if ($this->input->post('ajax') == 1){
@@ -58,13 +58,13 @@ class Code extends CI_Controller
 		}
 	}
 
-	function udpate()
+	function update()
 	{
 		if($this->input->post('kCode')){
 			$kCode = $this->input->post('kCode');
 			$kAsset = $this->input->post('kAsset');
 			$this->code_model->update_code($kCode);
-			$this->views_all($kAsset);
+			$this->view_all($kAsset);
 		}
 	}
 
