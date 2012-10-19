@@ -1,1 +1,1 @@
-/Users/administrator/Dropbox/ci_core/index.php
+../ci_core/index.php
