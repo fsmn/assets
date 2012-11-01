@@ -242,7 +242,7 @@ class Asset_model extends CI_Model{
 	function fetch_status_list()
 	{
 		$methodList = $this->fetch_one_values('status', 'status');
-		$methodPairs = getKeyedPair($methodList, array('status', 'status'), TRUE);
+		$methodPairs = getKeyedPair($methodList, array('status', 'status'), TRUE,TRUE);
 		return $methodPairs;
 	}
 
