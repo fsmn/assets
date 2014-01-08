@@ -1,5 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-
+/**
+ * Model is for managing items in menus displayed to users. 
+ */
 
 class menu_item_model extends CI_Model
 {

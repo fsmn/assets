@@ -11,16 +11,25 @@
 			id="product" name="product" value="<?=getValue($asset, 'product');?>" />
 	</p>
 	<p>
-		<label for="version">Version&nbsp;</label> <input type="text"
-			id="version" name="version" value="<?=getValue($asset, 'version');?>" />
-	</p>
-	<p>
 		<label for="name">Asset Name</label> <input type="text" id="name"
 			name="name" value="<?=getValue($asset, 'name');?>" />
 	</p>
+
+	<p>
+		<label for="version">Version&nbsp;</label> <input type="text"
+			id="version" name="version" value="<?=getValue($asset, 'version');?>" />
+	</p>
+
 	<p>
 		<label for="type">Type&nbsp;</label> <span id='typeField'> <?=form_dropdown('type', $typePairs, getValue($asset, 'type'), 'id="type"');?>
 		</span>
+	</p>
+	<p>
+		<label for="serial_number">Serial Number&nbsp;</label> <input
+			type="text" name="serial_number"
+			value="<?=getValue($asset,'serial_number');?>"
+			id="serial_number-<?=getValue($asset,"kAsset","0");?>"
+			class="serial_number" />
 	</p>
 	<p>
 		<label for="year_acquired">Year Acquired</label> <span
@@ -41,8 +50,8 @@
 	</p>
 	<div id="year_removed_block"
 	<? if(getValue($asset, 'status') != "Deacquisitioned" && getValue($asset, 'status') != "Destroyed" && getValue($asset, 'status') != "Stolen"){echo "style='display:none'";}?>>
-		<label for="year_removed">Year Removed</label> <input
-			type="text" id="year_removed" name="year_removed"
+		<label for="year_removed">Year Removed</label> <input type="text"
+			id="year_removed" name="year_removed"
 			value="<?=getValue($asset,"year_removed");?>" size="5" />
 	</div>
 	<p>

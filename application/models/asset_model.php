@@ -8,6 +8,7 @@ class Asset_model extends CI_Model{
 	var $version;
 	var $name;
 	var $type;
+	var $serial_number;
 	var $status;
 	var $source;
 	var $year_removed;
@@ -50,6 +51,11 @@ class Asset_model extends CI_Model{
 		if($this->input->post('type')){
 			$this->type = $this->input->post('type');
 		}
+		
+		if($this->input->post('serial_number')){
+			$this->serial_number = $this->input->post('serial_number');
+		}
+		
 		if($this->input->post('year_removed')){
 			$this->year_removed = $this->input->post('year_removed');
 		}

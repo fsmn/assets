@@ -14,6 +14,12 @@
 	<b>Type: </b>&nbsp;
 	<?=$asset->type?>
 </p>
+<? if(!empty($asset->serial_number)): ?>
+<p>
+	<b>Serial Number: </b>&nbsp;
+	<?=$asset->serial_number?>
+</p>
+<? endif; ?>
 <p>
 	<b>Year:&nbsp;</b>
 	<?=$asset->year_acquired;?>
