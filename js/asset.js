@@ -50,7 +50,7 @@
 			type: 'POST',
 			data: formData,
 			success: function(data) {
-				$("#asset-header_" + myAsset + " a").html(myVersion + " " + myProduct + " (" + myName + ")" );
+				$("#asset-header_" + myAsset + " a").html(myProduct + " " + myVersion + " (" + myName + ")" );
 				$(myLine).html(data);
 			}
 		}); //end ajax
