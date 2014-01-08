@@ -50,6 +50,7 @@
 			type: 'POST',
 			data: formData,
 			success: function(data) {
+				$("#asset-header_" + myAsset + " a").html(myVersion + " " + myProduct + " (" + myName + ")" );
 				$(myLine).html(data);
 			}
 		}); //end ajax
@@ -112,6 +113,8 @@
 		}
 		}
 	});
+	
+
 	
 	$(".asset_search").live('click', function(event) {
 		document.forms['asset_search'].submit();
