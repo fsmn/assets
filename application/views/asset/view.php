@@ -1,10 +1,11 @@
 <?php 
 $developer = $this->developer_model->fetch_value($asset->kDeveloper, 'developer');
 ?>
-<h4><a href="#" class='no_link' id='<?=$asset->kAsset?>'><?="$asset->product&nbsp;"; if($asset->version != ''){echo "$asset->version&nbsp;";} if($asset->name!=''){echo "($asset->name)";} ?></a></h4>
+<h4 class='asset-header' id='asset-header_<?=$asset->kAsset; ?>'><a href="#" class='no_link' id='<?=$asset->kAsset?>'><?="$asset->product&nbsp;"; if($asset->version != ''){echo "$asset->version&nbsp;";} if($asset->name!=''){echo "($asset->name)";} ?></a></h4>
 <div>
 <span class='button edit asset_edit' id='a_<?=$asset->kAsset; ?>'>Edit</span>
 <div class='assetDetails' id='details_<?=$asset->kAsset?>'>
+
 
 <?php 
 $data['asset'] = $asset;
