@@ -138,7 +138,7 @@ class Asset extends CI_Controller
 		$where["product"] = $this->input->get_post("product");
 		$where["year_acquired"] = $this->input->get_post("year_acquired");
 		$where["year_removed"] = $this->input->get_post("year_removed");
-		
+		$where["serial_number"] = $this->input->post("serial_number");
 		$this->session->set_userdata('kDeveloper' ,$where['kDeveloper']);
 		$this->session->set_userdata("type", $where['type']);
 		$this->session->set_userdata("status",$where['status']);

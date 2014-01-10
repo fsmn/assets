@@ -16,7 +16,6 @@
 	</p>
 		<p>
 		<label for="status_number">Serial Number</label> <input type="text" name="serial_number" id="serial_number" value=""/>
-		</span>
 	</p>
 	<p>
 
