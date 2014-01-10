@@ -14,6 +14,9 @@
 		<label for="status">Status</label> <span id='statusField'> <?php echo form_dropdown('status', $statusPairs, $this->session->userdata("status"), 'id="status"');?>
 		</span>
 	</p>
+		<p>
+		<label for="status_number">Serial Number</label> <input type="text" name="serial_number" id="serial_number" value=""/>
+	</p>
 	<p>
 
 		<label for="name">Asset Name</label> <span id="nameField"> <input
