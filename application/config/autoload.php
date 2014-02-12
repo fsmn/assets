@@ -80,8 +80,7 @@ $autoload['helper'] = array('form','url','file','interface','general');
 |
 */
 
-$autoload['config'] = array();
-
+$autoload['config'] = array('ci_opauth');
 
 /*
 | -------------------------------------------------------------------
