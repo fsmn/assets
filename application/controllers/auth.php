@@ -1,5 +1,4 @@
 <?php
-
 defined ( 'BASEPATH' ) or exit ( 'No direct script access allowed' );
 class Auth extends CI_Controller {
 
@@ -90,7 +89,7 @@ class Auth extends CI_Controller {
 					'id' => 'password',
 					'type' => 'password' 
 			);
-			$this->data['target'] = 'auth/login';
+			$this->data ['target'] = 'auth/login';
 			
 			$this->_render_page ( 'template/template', $this->data );
 		}
@@ -339,7 +338,7 @@ class Auth extends CI_Controller {
 			$this->data ['csrf'] = $this->_get_csrf_nonce ();
 			$this->data ['user'] = $this->ion_auth->user ( $id )->row ();
 			$this->data ['target'] = 'auth/deactivate_user';
-			$this->data['title'] = "Deactivate User";
+			$this->data ['title'] = "Deactivate User";
 			$this->_render_page ( 'template/template', $this->data );
 		} else {
 			// do we really want to deactivate?
@@ -567,7 +566,11 @@ class Auth extends CI_Controller {
 				'type' => 'password' 
 		);
 		$this->data ['target'] = 'auth/edit_user';
-		$this->_render_page ( 'template/template', $this->data );
+		if ($this->input->get ( "ajax" ) == 1) {
+			$this->_render_page ( $this->data ['target'], $this->data );
+		} else {
+			$this->_render_page ( 'template/template', $this->data );
+		}
 	
 	}
 	

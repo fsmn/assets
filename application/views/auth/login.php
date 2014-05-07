@@ -1,4 +1,4 @@
-<h1><?php echo lang('login_heading');?></h1>
+  <h1><?php echo lang('login_heading');?></h1>
 <p><?php echo lang('login_subheading');?></p>
 
 <div id="infoMessage"><?php echo $message;?></div>
@@ -21,7 +21,7 @@
   </p>
 
 
-  <p><?php echo form_submit('submit', lang('login_submit_btn'));?></p>
+  <p><?php echo form_submit('submit', lang('login_submit_btn'), "class='button'");?></p>
 
 <?php echo form_close();?>
 

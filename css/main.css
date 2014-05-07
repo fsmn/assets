@@ -41,7 +41,7 @@ body {
 #navigation ul li.site-name {
 	font-weight: bold;
 	font-size: 1.2em;
-	margin-top:0;
+	margin-top: 0;
 }
 
 #content {
@@ -82,9 +82,8 @@ a.button {
 	text-decoration: none;
 }
 
-.delete { 
- float: right;
-	
+.delete {
+	float: right;
 }
 
 .asset_content {
@@ -158,10 +157,19 @@ a.no_link {
 	color: black;
 }
 
+table.list {
+	width: 100%;
+}
+
+table.list th {
+	text-align: left;
+}
+
 li {
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
+
 legend {
 	font-size: 1.1em;
 	font-weight: bold;

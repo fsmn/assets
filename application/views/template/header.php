@@ -25,4 +25,5 @@ var baseUrl = '<?=base_url()."index.php/";?>';
 <script type="text/javascript" src="<?php echo base_url();?>js/developer.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/popup.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/file.js"></script>
+<script type="text/javascript" src="<?php echo base_url("js/user.js");?>"></script>
 
