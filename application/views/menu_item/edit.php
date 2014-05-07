@@ -35,5 +35,9 @@
 <input type="text" name="rank" id="rank" value="<?=getValue($item, "rank");?>"/>
 </p>
 <p>
+<label for="access_group">Access Group: </label>
+<?=form_dropdown("access_group",$groups,getValue($item, "access_group",2),"id='access_group'");?>
+</p>
+<p>
 <input type="submit" class="button" value="Save"/>
 </form>

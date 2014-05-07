@@ -13,6 +13,7 @@ class menu_item_model extends CI_Model
 	var $id;
 	var $enclosure;
 	var $rank;
+	var $access_group;
 
 	
 	function __construct()
@@ -23,7 +24,7 @@ class menu_item_model extends CI_Model
 	
 	function prepare_variables()
 	{
-		$variables = array("kMenu","label","type","href","class","id","enclosure","rank");
+		$variables = array("kMenu","label","type","href","class","id","enclosure","rank","access_group");
 		for($i = 0; $i < count($variables); $i++){
 			$myVariable = $variables[$i];
 			if($this->input->post($myVariable)){
