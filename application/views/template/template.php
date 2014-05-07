@@ -7,9 +7,11 @@ $this->load->view('template/header');?>
 </head>
 <body>
 <div id="page">
+<? if($this->ion_auth->logged_in()): ?>
 <div id="navigation">
 <? $this->load->view('template/menu'); ?>
 </div>
+<? endif; ?>
 <div id='content'>
 <? $this->load->view($target);?>
 </div>

@@ -1,6 +1,6 @@
 <?php
 
-class Asset extends CI_Controller
+class Asset extends MY_Controller
 {
 
 	function __construct()

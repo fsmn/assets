@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('database', 'table','session');
+$autoload['libraries'] = array('database', 'table','session','ion_auth','email');
 
 
 /*
@@ -80,7 +80,7 @@ $autoload['helper'] = array('form','url','file','interface','general');
 |
 */
 
-$autoload['config'] = array('ci_opauth');
+$autoload['config'] = array();
 
 /*
 | -------------------------------------------------------------------

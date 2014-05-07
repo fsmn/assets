@@ -1,0 +1,10 @@
+[07-May-2014 11:37:16 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Undefined method Ion_auth::get_user_groups() called' in /Users/administrator/Dropbox/assets/application/libraries/Ion_auth.php:113
+Stack trace:
+#0 /Users/administrator/Dropbox/assets/application/views/template/menu.php(3): Ion_auth->__call('get_user_groups', Array)
+#1 /Users/administrator/Dropbox/assets/application/views/template/menu.php(3): Ion_auth->get_user_groups()
+#2 /Users/administrator/Dropbox/assets/system/core/Loader.php(833): include('/Users/administ...')
+#3 /Users/administrator/Dropbox/assets/system/core/Loader.php(419): CI_Loader->_ci_load(Array)
+#4 /Users/administrator/Dropbox/assets/application/views/template/template.php(12): CI_Loader->view('template/menu')
+#5 /Users/administrator/Dropbox/assets/system/core/Loader.php(833): include('/Users/administ...')
+#6 /Users/administrator/Dropbox/assets/system/core/Loader.php(419): CI_Loader->_ci_load(Array)
+#7 /Users/administrator/Dropbox/assets/application/controllers/auth.php(701): CI_Loader->view('template in /Users/administrator/Dropbox/assets/application/libraries/Ion_auth.php on line 113

@@ -1,6 +1,6 @@
 <?php
 
-class File extends CI_Controller {
+class File extends MY_Controller {
 
 	function __construct()
 	{
