@@ -62,7 +62,10 @@ function create_button($data)
 
 			$class = "class='button'";
 			if(array_key_exists("class", $data)){
-				$class = "class='" . $data["class"] . "'";
+				if(!is_array($data["class"])){
+					$data["class"] = array($data["class"]);
+				}
+				$class = "class='" . implode(" ", $data["class"]) . "'";
 			}
 
 			$id = "";
@@ -120,9 +123,9 @@ function create_button_bar($buttons, $options = NULL ){
 	foreach($buttons as $button){
 		if($button["item"] == $selection){
 			if(array_key_exists("class",$button)){
-				$button["class"] .= "active";
+				$button["class"][] = "active";
 			}else{
-				$button["class"] = "button active";
+				$button["class"] = array( "button,active");
 			}
 		}
 		$button_list[] = create_button($button);

@@ -17,13 +17,8 @@ body {
 
 #navigation {
 	top: 0;
-	width: 95%;
 	padding: .5em 1em 0 1em;
-	height: 2em;
-	*border-width: 1px;
-	*border-style: solid;
-	margin-bottom: 2em;
-	height: 35px;
+	height: 6em;
 	display: block;
 }
 
@@ -42,6 +37,10 @@ body {
 	font-weight: bold;
 	font-size: 1.2em;
 	margin-top: 0;
+}
+
+h1 {
+	margin-bottom:.5em;	
 }
 
 #content {
