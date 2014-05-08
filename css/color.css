@@ -144,6 +144,11 @@ body {
 	background: linear-gradient(top, #B84D70 0, #990033 100%);
 }
 
+.link {
+	color: #67b021;
+	cursor: pointer;
+	text-decoration: underline;
+}
 .asset_content {
 	
 }

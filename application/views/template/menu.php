@@ -9,6 +9,9 @@ foreach ( $main_menu as $item ) {
 if ($this->uri->segment ( 2 ) == "search") {
 	$buttons [] = array("text"=>"Export", "class"=>array("button","export"), "href"=> site_url ( "asset/export" ), "item"=>"none" );
 }
+$user = $this->ion_auth->user()->row();
+$userbutton = create_button(array("text"=>$user->username,"type"=>"span", "id"=>"edit-user-link_$user->id", "class"=>array("link","edit-user"), "item"=>"auth"  ));
 ?>
 <h1 class='site-name'>Asset Tracking System</h1>
+<div id="user-name"><?=$userbutton;?></div>
 <? echo create_button_bar($buttons);
