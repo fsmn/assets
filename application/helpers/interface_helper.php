@@ -39,11 +39,13 @@ function create_button($data)
 		$title = "";
 		$target = "";
 		$text = $data["text"];
+		
 		if(array_key_exists("type", $data)){
 			if(isset($data["type"])){
 				$type = $data["type"];
 			}
-		} else {
+		} 
+		if($type == "a"){
 			if(array_key_exists("href", $data)){
 				$href = "href='" . $data["href"] . "'";
 			}else{
