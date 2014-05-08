@@ -1,4 +1,4 @@
-<h1><?php echo lang('index_heading');?></h1>
+<h2><?php echo lang('index_heading');?></h2>
 
 <div id="infoMessage"><?php echo $message;?></div>
 
