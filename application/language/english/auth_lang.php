@@ -31,7 +31,7 @@ $lang['login_forgot_password'] = 'Forgot your password?';
 
 // Index
 $lang['index_heading']           = 'Users';
-$lang['index_subheading']        = 'Below is a list of the users.';
+$lang['index_subheading']        = 'User List';
 $lang['index_fname_th']          = 'First Name';
 $lang['index_lname_th']          = 'Last Name';
 $lang['index_email_th']          = 'Email';
@@ -40,8 +40,8 @@ $lang['index_status_th']         = 'Status';
 $lang['index_action_th']         = 'Action';
 $lang['index_active_link']       = 'Active';
 $lang['index_inactive_link']     = 'Inactive';
-$lang['index_create_user_link']  = 'Create a new user';
-$lang['index_create_group_link'] = 'Create a new group';
+$lang['index_create_user_link']  = 'New User';
+$lang['index_create_group_link'] = 'New Group';
 
 // Deactivate User
 $lang['deactivate_heading']                  = 'Deactivate User';
