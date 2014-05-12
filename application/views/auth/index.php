@@ -21,7 +21,7 @@
 					<?php echo anchor("auth/edit_group/".$group->id, $group->name) ;?><br />
                 <?php endforeach?>
 			</td>
-			<td><?php echo ($user->active) ? anchor("auth/deactivate/".$user->id, "Active") : anchor("auth/activate/". $user->id, "Inactive");?></td>
+			<td><?php echo ($user->active) ? anchor("auth/deactivate/".$user->id, "Active","class='deactivate-user' id='deactivate-user_$user->id'") : anchor("auth/activate/". $user->id, "Inactive");?></td>
 			<td><?php echo anchor("auth/edit_user/".$user->id, 'Edit', "class='button edit edit-user' id='edit-user_$user->id'") ;?></td>
 		</tr>
 	<?php endforeach;?>

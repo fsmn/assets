@@ -54,3 +54,27 @@
 		return false;
 
 	});
+	
+	$(document).on("click",".deactivate-user",function(){
+		
+		my_id = this.id.split("_")[1];
+	
+		form_data = {
+				ajax: "1"
+		};
+		
+		$.ajax({
+			type: "get",
+			url: baseUrl + "auth/deactivate/" + my_id,
+			data: form_data,
+			success: function(data){
+				showPopup("Deactivate User",data, "auto");
+			},
+			error: function(data){
+				console.log(data);
+				return false;
+			}
+		});
+		return false;
+		
+	});

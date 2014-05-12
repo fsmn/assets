@@ -1,4 +1,4 @@
-	$(".developer_add").live('click', function(event) {
+	$(document).on('click',".developer_add", function(event) {
 		var myUrl = baseUrl + "developer/add";
 		var formData = {
 				ajax: 1
@@ -13,7 +13,7 @@
 		});
 	});
 
-	$(".developer_edit").live('click', function(event) {
+	$(document).on('click', ".developer_edit", function(event) {
 			var myDeveloper = this.id.split("_")[1];
 			var myUrl = baseUrl + "developer/edit/";
 			var formData = {
@@ -31,7 +31,7 @@
 			
 		});// end developer_edit
 		
-		$('#developer').live('change',function(){
+		$(document).on('change','#developer',function(){
 			myValue=$(this).val();
 			if(myValue=="other"){
 				$("#developerField").html("<input type='text' id='developer' name='developer' value='' size='35'/>");

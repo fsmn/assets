@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.code_save').live('click', function() {
+	$(document).on('click','.code_save', function() {
 		var myCode = $("#value").val();
 		var myType = $("#type").val();
 		var myAsset = $("#kAsset").val();
@@ -29,7 +29,7 @@ $(document).ready(function() {
 		}); //end ajax
 	});//end code_save
 	
-	$(".code_edit").live('click', function(event) {
+	$(document).on('click',".code_edit", function(event) {
 		var myCode = this.id.split("_")[1];
 		
 		var formData = {
@@ -50,7 +50,7 @@ $(document).ready(function() {
 	
 
 	
-	$(".code_new").live('click', function(event) {
+	$(document).on('click',".code_new", function(event) {
 		var myId = this.id.split("_")[1];
 		var myUrl = baseUrl + "code/add/";
 		var formData = {
@@ -72,7 +72,7 @@ $(document).ready(function() {
 
 
 
-	$('.code_delete').live('click',function() {
+	$(document).on('click','.code_delete', function() {
 			var myCode = $('#kCode').val();
 			var myAsset= $('#kAsset').val();
 			var myUrl = baseUrl + "code/delete_code/";
@@ -98,7 +98,7 @@ $(document).ready(function() {
 			}//end if
 	});
 	
-	$("#type").live("change", function(){
+	$(document).on("change","#type", function(){
 		if($("#type").val() == "other"){
 			$("#type-span").html("<input type='text' id='type' name='type' value=''/>");
 			$("#type").focus();

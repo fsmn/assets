@@ -1,4 +1,4 @@
-	$(".file_edit").live('click', function(event) {
+	$(document).live('click', ".file_edit",function(event) {
 		var myFile = this.id.split("_")[1];
 		var formData = {
 				ajax: '1',
@@ -16,7 +16,7 @@
 		}); //end ajax
 	}); // end insert	
 	
-	$(".file_cancel").live('click', function(event){
+	$(document).live('click',".file_cancel", function(event){
 		var myFile = $("#kFile").val();
 		var formData = {
 				ajax: '1',

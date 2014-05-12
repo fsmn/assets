@@ -1,6 +1,6 @@
 $(document).ready(function() {
 			
-			$('.home').live('click', function(event){
+			$(document).on('click','.home', function(event){
 				document.location = baseUrl;
 			});
 			

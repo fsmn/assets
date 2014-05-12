@@ -339,7 +339,11 @@ class Auth extends CI_Controller {
 			$this->data ['user'] = $this->ion_auth->user ( $id )->row ();
 			$this->data ['target'] = 'auth/deactivate_user';
 			$this->data ['title'] = "Deactivate User";
-			$this->_render_page ( 'template/template', $this->data );
+			if($this->input->get("ajax") == 1){
+				$this->_render_page($this->data['target'], $this->data);
+			}else{
+				$this->_render_page ( 'template/template', $this->data );
+			}
 		} else {
 			// do we really want to deactivate?
 			if ($this->input->post ( 'confirm' ) == 'yes') {
