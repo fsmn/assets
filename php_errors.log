@@ -8,3 +8,6 @@ Stack trace:
 #5 /Users/administrator/Dropbox/assets/system/core/Loader.php(833): include('/Users/administ...')
 #6 /Users/administrator/Dropbox/assets/system/core/Loader.php(419): CI_Loader->_ci_load(Array)
 #7 /Users/administrator/Dropbox/assets/application/controllers/auth.php(701): CI_Loader->view('template in /Users/administrator/Dropbox/assets/application/libraries/Ion_auth.php on line 113
+[12-May-2014 09:40:52 America/Chicago] PHP Parse error:  parse error, expecting `','' or `';'' in /Users/administrator/Dropbox/assets/application/views/auth/login.php on line 9
+[12-May-2014 11:15:10 America/Chicago] PHP Fatal error:  Call to undefined method Auth::render_page() in /Users/administrator/Dropbox/assets/application/controllers/auth.php on line 435
+[12-May-2014 11:16:31 America/Chicago] PHP Fatal error:  Call to undefined method Auth::render_page() in /Users/administrator/Dropbox/assets/application/controllers/auth.php on line 435

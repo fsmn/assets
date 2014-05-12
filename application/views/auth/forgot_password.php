@@ -6,10 +6,10 @@
 <?php echo form_open("auth/forgot_password");?>
 
       <p>
-      	<label for="email"><?php echo sprintf(lang('forgot_password_email_label'), $identity_label);?></label> <br />
+      	<label for="email"><?php echo sprintf("%s:", $identity_label);?></label> <br />
       	<?php echo form_input($email);?>
       </p>
 
-      <p><?php echo form_submit('submit', lang('forgot_password_submit_btn'));?></p>
+      <p><?php echo form_submit('submit', "Reset Password","class='button edit'");?></p>
 
 <?php echo form_close();?>

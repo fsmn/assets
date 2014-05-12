@@ -1,11 +1,11 @@
 //$(document).ready(function() {
-	$(".asset_list").live('click',function(){
+	$(document).on('click',".asset_list", function(){
 			var myId = this.id.split('_')[1];
 			var myUrl = baseUrl + "developer/view/" + myId;
 			document.location = myUrl;
 	});//end asset_list.live
 	
-	$(".asset_edit").live('click', function(event) {
+	$(document).on('click',".asset_edit", function(event) {
 					var myAsset = this.id.split("_")[1];
 					var formData = {
 							ajax: '1',
@@ -26,7 +26,7 @@
 //					document.location = "#" + this.id;
 				});// end edit
 				
-	$('.asset_save').live('click',function(){
+	$(document).on('click','.asset_save', function(){
 //			document.forms['asset_editor'].submit();
 		//@TODO this has to be simpler to do. I need to do the serialize function here.
 		var myAsset = $("#kAsset").val();
@@ -56,7 +56,7 @@
 		}); //end ajax
 	});//emd asset_save
 	
-	$(".asset_new").live('click', function(event) {
+	$(document).on('click',".asset_new", function(event) {
 		var myUrl = baseUrl + "asset/add/";
 		var formData = {
 				ajax: '1',
@@ -73,7 +73,7 @@
 	}); //end add
 	
 	
-	$(".asset_show_search").live('click', function(event) {
+	$(document).on('click', ".asset_show_search", function(event) {
 		var myUrl = baseUrl + "asset/show_search/";
 		var formData = {
 				ajax: '1'
@@ -88,7 +88,7 @@
 		});// end ajax
 	});// end search
 	
-	$(".asset_delete").live('click', function(event){
+	$(document).on('click',".asset_delete", function(event){
 		var myAsset = $("#kAsset").val();
 		var myDeveloper = $("#kDeveloper").val();
 		var myUrl = baseUrl + "asset/delete/";
@@ -116,19 +116,19 @@
 	
 
 	
-	$(".asset_search").live('click', function(event) {
+	$(document).on('click',".asset_search", function(event) {
 		document.forms['asset_search'].submit();
 	});// end search
 	
 	
-	$('#type').live('change;',function(){
+	$(document).on('change;','#type',function(){
 		myValue=$(this).val();
 		if(myValue=="other"){
 			$("#typeField").html("<input type='text' id='type' name='type' value='' class='width:25%'/>");
 		}
 	});
 	
-	$("#status").live('change',function(){
+	$(document).on('change',"#status", function(){
 		myValue=$(this).val();
 		if(myValue=="other"){
 			$("#statusField").html("<input type='text' id='status' name='status' value='' size='25'/>");
@@ -139,7 +139,7 @@
 		}
 	});
 	
-	$('.asset_file_new').live('click', function(event){
+	$(document).on('click','.asset_file_new', function(event){
 		var myAsset = this.id.split("_")[1];
 		var myUrl = baseUrl + "asset/new_file/";
 		var formData = {

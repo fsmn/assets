@@ -4,12 +4,12 @@
 
 <table class="list">
 	<tr>
-		<th><?php echo lang('index_fname_th');?></th>
-		<th><?php echo lang('index_lname_th');?></th>
-		<th><?php echo lang('index_email_th');?></th>
-		<th><?php echo lang('index_groups_th');?></th>
-		<th><?php echo lang('index_status_th');?></th>
-		<th><?php echo lang('index_action_th');?></th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Groups</th>
+		<th>Status</th>
+		<th>Action</th>
 	</tr>
 	<?php foreach ($users as $user):?>
 		<tr>
@@ -21,11 +21,11 @@
 					<?php echo anchor("auth/edit_group/".$group->id, $group->name) ;?><br />
                 <?php endforeach?>
 			</td>
-			<td><?php echo ($user->active) ? anchor("auth/deactivate/".$user->id, lang('index_active_link')) : anchor("auth/activate/". $user->id, lang('index_inactive_link'));?></td>
+			<td><?php echo ($user->active) ? anchor("auth/deactivate/".$user->id, "Active") : anchor("auth/activate/". $user->id, "Inactive");?></td>
 			<td><?php echo anchor("auth/edit_user/".$user->id, 'Edit', "class='button edit edit-user' id='edit-user_$user->id'") ;?></td>
 		</tr>
 	<?php endforeach;?>
 </table>
 
-<div class="button-box"><ul><li><?php echo anchor('auth/create_user', lang('index_create_user_link'), "class='button new'")?></li>
-<li><?php echo anchor('auth/create_group', lang('index_create_group_link'), "class='button new'")?></li></ul></div>
+<div class="button-box"><ul><li><?php echo anchor('auth/create_user', "New User", "class='button new new-user'")?></li>
+<li><?php echo anchor('auth/create_group', "New Group", "class='button new new-group'")?></li></ul></div>

@@ -4,15 +4,15 @@
 <?php echo form_open("auth/deactivate/".$user->id);?>
 
   <p>
-  	<?php echo lang('deactivate_confirm_y_label', 'confirm');?>
+  	<?php echo form_label("Yes", 'confirm');?>
     <input type="radio" name="confirm" value="yes" checked="checked" />
-    <?php echo lang('deactivate_confirm_n_label', 'confirm');?>
+    <?php echo form_label("No", 'confirm');?>
     <input type="radio" name="confirm" value="no" />
   </p>
 
   <?php echo form_hidden($csrf); ?>
   <?php echo form_hidden(array('id'=>$user->id)); ?>
 
-  <p><?php echo form_submit('submit', lang('deactivate_submit_btn'));?></p>
+  <p><?php echo form_submit('submit', "Deactivate","class='button edit'");?></p>
 
 <?php echo form_close();?>

@@ -6,23 +6,23 @@
 <?php echo form_open("auth/login");?>
 
   <p>
-    <?php echo lang('login_identity_label', 'identity');?>
+    <label for="identity">Email/Username: </label>
     <?php echo form_input($identity);?>
   </p>
 
   <p>
-    <?php echo lang('login_password_label', 'password');?>
+    <label for='password'>Password: </label>
     <?php echo form_input($password);?>
   </p>
 
   <p>
-    <?php echo lang('login_remember_label', 'remember');?>
+    <label for="remember">Remember Me: </label>
     <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?>
   </p>
 
 
-  <p><?php echo form_submit('submit', lang('login_submit_btn'), "class='button'");?></p>
+  <p><?php echo form_submit('submit', "Login", "class='button'");?></p>
 
 <?php echo form_close();?>
 
-<p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
+<p><a href="forgot_password">Forgot your password?</a></p>
