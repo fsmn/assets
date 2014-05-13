@@ -157,4 +157,42 @@
 	}
 	);//end new_file
 	
+$(document).on('click | focus', '.asset-item',function(){
+	if(! $(this).hasClass("active") ){
+		$(this).addClass("active");
+		my_id = this.id.split("_")[1];
+		form_data = {
+				ajax: 1
+		};
+		$.ajax({
+			type:"get",
+			url: baseUrl + "asset/view/" + my_id,
+			data: form_data,
+			success: function(data){
+				$("#asset-details").html(data).fadeIn();
+			}
+		});
+	}else{
+		$(this).removeClass("active");
+	}
+});
 
+$(document).on('blur','.asset-item', function(){
+	$(this).removeClass("active");
+});
+
+$(window).scroll(function(){
+	var top=$('.float');
+	if($(window).scrollTop()>250){
+		if(!top.hasClass('fixed')){
+			top.addClass('fixed');
+			top.removeClass('static');
+			//top.css('background-color','#000');
+		}
+	}else{
+		if(top.hasClass('fixed')){
+			top.addClass('static');
+			top.removeClass('fixed');
+		}
+	}
+});

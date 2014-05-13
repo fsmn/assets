@@ -9,6 +9,5 @@
 
 <?php
 
-	$this->load->view('asset/list_by_type');
+	$this->load->view('asset/list');
 
-?>

@@ -7,5 +7,5 @@ if($code->type == "Model"){
 echo "<span id='codeline_$code->kCode'><span class='bold'
 id='type_$code->kCode'>$code->type</span>:
 <span id='code_$code->kCode'>$code->value</span>
-<span class='button edit code_edit' id='code_$code->kCode'>Edit</span>
+<span class='button edit small code_edit' id='code_$code->kCode'>Edit</span>
 </span>";

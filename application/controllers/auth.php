@@ -544,7 +544,8 @@ class Auth extends CI_Controller {
 				'type' => 'password' 
 		);
 		$this->data ['target'] = 'auth/edit_user';
-		if ($this->input->get ( "ajax" ) == 1) {
+		$this->data['ajax'] = $this->input->get ( "ajax" );
+		if ( $this->data['ajax'] == 1) {
 			$this->_render_page ( $this->data ['target'], $this->data );
 		} else {
 			$this->_render_page ( 'template/template', $this->data );

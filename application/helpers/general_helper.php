@@ -110,3 +110,16 @@ function getValue($object, $item, $default = null){
 	}
 	return $output;
 }
+
+function format_asset_name($asset){
+	$output = array($asset->product);
+	
+	if($asset->version != ''){
+		$output[] = $asset->version;
+	} 
+	if($asset->name!=''){
+		$output[] = sprintf("(%s)",$asset->name);
+		
+	}
+	return implode("&nbsp",$output);
+}

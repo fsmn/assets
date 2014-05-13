@@ -20,11 +20,11 @@ if( $code ){
 </p>
 <div class='button-box'>
 <ul>
-<li><span class='button uppercase'>UPPERCASE</span></li>
+<li><span class='button small uppercase'>UPPERCASE</span></li>
 <li>
-<span class="button code_save" id="save_<? print getValue($code, 'kCode'); ?>">Save</span></li>
+<span class="button small code_save" id="save_<? print getValue($code, 'kCode'); ?>">Save</span></li>
 	<?php if($saveAction == "save"):?>
-		<li><span class="button delete code_delete">Delete</span></li>
+		<li><span class="button small delete code_delete">Delete</span></li>
 	<?php endif;?>
 	</ul>
 	</div>
