@@ -107,6 +107,7 @@ class Asset_model extends CI_Model{
 					if(in_array($this_key,$field_list) && !empty($this_value)){
 						switch($this_key){
 							case "name":
+							case "serial_number":
 							case "product":
 								$this->db->like("asset." . $this_key,$this_value);
 								break;
