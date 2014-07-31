@@ -109,7 +109,7 @@ class Asset_model extends CI_Model{
 							case "name":
 							case "serial_number":
 							case "product":
-								$this->db->like("asset." . $this_key,$this_value);
+								$this->db->like("asset." . $this_key,"%$this_value%");
 								break;
 							default:
 								$this->db->where("asset." . $this_key, $this_value);
