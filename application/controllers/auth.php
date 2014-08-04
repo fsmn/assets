@@ -44,7 +44,7 @@ class Auth extends CI_Controller {
 			}
 			$this->data ['target'] = "auth/index";
 			$this->data ['title'] = "User List";
-			$this->_render_page ( 'page/index', $this->data );
+			$this->_render_page ( 'template/template', $this->data );
 		}
 	
 	}
@@ -93,7 +93,7 @@ class Auth extends CI_Controller {
 			);
 			$this->data ['target'] = 'auth/login';
 			
-			$this->_render_page ( 'page/index', $this->data );
+			$this->_render_page ( 'template/template', $this->data );
 		}
 	
 	}
