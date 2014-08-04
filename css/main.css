@@ -164,6 +164,7 @@ fieldset.developer_list legend,span.developer_view {
 	float:left;
 	width: 27%;
 	padding: 10px;
+	height: 65px;
 }
 
 .codeList {
