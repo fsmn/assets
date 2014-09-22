@@ -157,6 +157,10 @@ body {
 	color: blue;
 }
 
+.asset-item:hover {
+	background-color:#67b021;
+}
+
 .bold {
 	
 }
