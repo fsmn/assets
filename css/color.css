@@ -157,7 +157,7 @@ body {
 	color: blue;
 }
 
-.asset-item:hover {
+.asset-item:hover,.asset-item.active {
 	background-color:#67b021;
 }
 

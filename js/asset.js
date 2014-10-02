@@ -158,7 +158,9 @@
 	);//end new_file
 	
 $(document).on('click | focus', '.asset-item',function(){
-	if(! $(this).hasClass("active") ){
+	$(".asset-item.active").removeClass("active");
+	if(! $(this).hasClass("active") ){;
+	
 		$(this).addClass("active");
 		my_id = this.id.split("_")[1];
 		form_data = {
@@ -173,12 +175,12 @@ $(document).on('click | focus', '.asset-item',function(){
 			}
 		});
 	}else{
-		$(this).removeClass("active");
+		//$(this).removeClass("active");
 	}
 });
 
 $(document).on('blur','.asset-item', function(){
-	$(this).removeClass("active");
+	//$(this).removeClass("active");
 });
 
 $(window).scroll(function(){
