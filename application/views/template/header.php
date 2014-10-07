@@ -1,7 +1,9 @@
 <?php ?>
 
 <title><?php echo $title; ?></title>
-
+  <meta name="viewport"
+  content="width=device-width,
+  minimum-scale=1.0, maximum-scale=1.0" />
 <link href="<?php echo base_url("css/main.css"); ?>" type="text/css"
 	rel="stylesheet" media="all" />
 
