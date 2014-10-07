@@ -46,7 +46,7 @@ h1 {
 }
 
 #content {
-	/*max-width: 500px;*/)
+	/*max-width: 500px;*/ )
 	margin: 5px;
 	margin-top: 15px;
 }
@@ -103,12 +103,13 @@ a.button {
 
 #asset-list {
 	width: 45%;
-float: left;
-padding-bottom: 10px;
+	float: left;
+	padding-bottom: 10px;
 }
 
 .asset-item {
 	padding: 5px;
+	font-size: 1.1em;
 }
 
 #asset-details {
@@ -120,7 +121,7 @@ padding-bottom: 10px;
 	width: 50%;
 }
 
-#asset-details h4{
+#asset-details h4 {
 	margin-top: 0;
 }
 
@@ -161,7 +162,7 @@ fieldset.developer_list legend,span.developer_view {
 }
 
 .column-3 {
-	float:left;
+	float: left;
 	width: 27%;
 	padding: 10px;
 	height: 65px;
@@ -254,16 +255,15 @@ legend {
 	background-color: #ddd;
 }
 
-.fixed{
+.fixed {
 	position: fixed;
 	top: 10px;
 	left: 48%;
 	width: 35% !important;
 }
 
-.static{
+.static {
 	position: static;
-	
 }
 
 #footer {
@@ -273,31 +273,35 @@ legend {
 	bottom: 5px;
 }
 
-@media all and (max-width:900px){
+@media all and (max-width:900px) {
 	.column-3 {
-	width: 45%;
+		width: 45%;
+	}
+}
+
+@media all and (max-width:540px) {
+	#navigation .button-box ul li {
+		padding-left: 0;
+		margin-left: .2em;
+	}
+	#user-name {
+		position: absolute;
+		top: 0;
+	}
+	#page {
+		min-width: 295px;
+	}
+	.column-3 {
+		width: 90%;
+	}
+	#user-name .button-box ul li {
+		margin-left: 1em;
+	}
+	.site-name {
+		padding-top: .5em;
 	}
 	
-}
-
-@media all and (max-width:540px){
-	#navigation .button-box ul li {
-	padding-left: 0;
-	margin-left: .2em;
+	#asset-details {
+	width: 90%;
 	}
-#user-name {
-	position: absolute;
-	top: 0;
 }
-#page {
-	min-width: none;
-}
-
-#user-name .button-box ul li {
-	margin-left: 1em;
-}
-
-.site-name {
-	padding-top: .5em;
-}
-	}

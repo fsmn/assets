@@ -185,6 +185,8 @@ $(document).on('blur','.asset-item', function(){
 
 $(window).scroll(function(){
 	var top=$('.float');
+	console.log($(window).width());
+	if($(window).width()>400){
 	if($(window).scrollTop()>250){
 		if(!top.hasClass('fixed')){
 			top.addClass('fixed');
@@ -197,4 +199,5 @@ $(window).scroll(function(){
 			top.removeClass('fixed');
 		}
 	}
+}
 });

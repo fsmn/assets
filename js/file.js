@@ -1,4 +1,4 @@
-	$(document).live('click', ".file_edit",function(event) {
+	$(document).on('click', ".file_edit",function(event) {
 		var myFile = this.id.split("_")[1];
 		var formData = {
 				ajax: '1',
@@ -16,7 +16,7 @@
 		}); //end ajax
 	}); // end insert	
 	
-	$(document).live('click',".file_cancel", function(event){
+	$(document).on('click',".file_cancel", function(event){
 		var myFile = $("#kFile").val();
 		var formData = {
 				ajax: '1',
@@ -34,7 +34,7 @@
 		});
 	});
 	
-	$(".file_delete").live('click', function(event){
+	$(document).on('click',".file_delete", function(event){
 		var myFile = $("#kFile").val();
 		var formData = {
 				ajax: 1,
