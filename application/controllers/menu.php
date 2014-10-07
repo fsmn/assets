@@ -37,7 +37,7 @@ class menu extends MY_Controller
 		$this->item->update($kItem);
 		redirect("menu");
 	}
-	
+
 	function create_item()
 	{
 		$data["item"] = NULL;
@@ -48,7 +48,7 @@ class menu extends MY_Controller
 		$data["action"] = "insert_item";
 		$this->load->view("menu_item/edit",$data);
 	}
-	
+
 	function insert_item()
 	{
 		$this->item->insert();

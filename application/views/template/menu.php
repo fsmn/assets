@@ -10,8 +10,13 @@ if ($this->uri->segment ( 2 ) == "search") {
 	$buttons [] = array("text"=>"Export", "class"=>array("button","export"), "href"=> site_url ( "asset/export" ), "item"=>"none" );
 }
 $user = $this->ion_auth->user()->row();
-$userbutton = create_button(array("text"=>$user->username,"type"=>"span", "id"=>"edit-user-link_$user->id", "class"=>array("link","edit-user"), "item"=>"auth"  ));
+$utility_menu = $this->menu_model->get(2);
+foreach($utility_menu as $utility_item){
+$utility_buttons[] = array( "text"=>$utility_item->label,"class"=>explode(",",$utility_item->class), "type"=>$utility_item->type, "href"=>site_url($utility_item->href), "item"=>"none");
+}
+$utility_buttons[] = array("text"=>$user->username,"type"=>"span", "id"=>"edit-user-link_$user->id", "class"=>array("link","edit-user"), "item"=>"auth"  );
 ?>
 <h1 class='site-name'>Asset Tracking System</h1>
-<div id="user-name"><?=$userbutton;?></div>
+<div id="user-name">
+<?=create_button_bar($utility_buttons); ?></div>
 <? echo create_button_bar($buttons);

@@ -214,6 +214,8 @@ legend {
 	position: fixed;
 	right: 25px;
 	top: 25px;
+	background-color: #fff;
+	z-index: 1;
 }
 
 .login {
@@ -270,3 +272,29 @@ legend {
 	position: static;
 	bottom: 5px;
 }
+
+@media all and (max-width:900px){
+	.column-3 {
+	width: 45%;
+	}
+	
+}
+
+@media all and (max-width:540px){
+	#navigation .button-box ul li {
+	padding-left: 0;
+	margin-left: .2em;
+	}
+#user-name {
+	position: absolute;
+	top: 0;
+}
+
+#user-name .button-box ul li {
+	margin-left: 1em;
+}
+
+.site-name {
+	padding-top: .5em;
+}
+	}

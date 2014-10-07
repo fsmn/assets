@@ -2,10 +2,10 @@
 
 <title><?php echo $title; ?></title>
 
-<link href="<?php echo base_url(); ?>css/main.css" type="text/css"
+<link href="<?php echo base_url("css/main.css"); ?>" type="text/css"
 	rel="stylesheet" media="all" />
 
-<link href="<?php echo base_url(); ?>css/print.css" type="text/css"
+<link href="<?php echo base_url("css/print.css"); ?>" type="text/css"
 	rel="stylesheet" media="print" />
 <!-- <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -15,15 +15,15 @@
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<script type="text/javascript">          
+<script type="text/javascript">
 var baseUrl = '<?=base_url()."index.php/";?>';
 
 </script>
-<script type="text/javascript" src="<?php echo base_url();?>js/main.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/asset.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/code.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/developer.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/popup.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/file.js"></script>
+<script type="text/javascript" src="<?php echo base_url("js/main.js");?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/asset.js");?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/code.js");?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/developer.js");?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/popup.js");?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/file.js");?>"></script>
 <script type="text/javascript" src="<?php echo base_url("js/user.js");?>"></script>
 

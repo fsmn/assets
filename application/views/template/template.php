@@ -12,6 +12,11 @@ $this->load->view('template/header');?>
 <? $this->load->view('template/menu'); ?>
 </div>
 <? endif; ?>
+<? if($this->session->flashdata("notice")):?>
+<div id="notice">
+<? echo $this->session->flashdata("notice");?>
+</div>
+<? endif;?>
 <div id='content'>
 <? $this->load->view($target);?>
 </div>
