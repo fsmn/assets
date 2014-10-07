@@ -16,7 +16,7 @@ $utility_buttons[] = array( "text"=>$utility_item->label,"class"=>explode(",",$u
 }
 $utility_buttons[] = array("text"=>$user->username,"type"=>"span", "id"=>"edit-user-link_$user->id", "class"=>array("link","edit-user"), "item"=>"auth"  );
 ?>
-<h1 class='site-name'>Asset Tracking System</h1>
+<h1 class='site-name'><a href="/">Asset Tracking System</a></h1>
 <div id="user-name">
 <?=create_button_bar($utility_buttons); ?></div>
 <? echo create_button_bar($buttons);

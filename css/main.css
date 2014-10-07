@@ -289,6 +289,9 @@ legend {
 	position: absolute;
 	top: 0;
 }
+#page {
+	min-width: none;
+}
 
 #user-name .button-box ul li {
 	margin-left: 1em;
