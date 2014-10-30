@@ -11,3 +11,13 @@ Stack trace:
 [12-May-2014 09:40:52 America/Chicago] PHP Parse error:  parse error, expecting `','' or `';'' in /Users/administrator/Dropbox/assets/application/views/auth/login.php on line 9
 [12-May-2014 11:15:10 America/Chicago] PHP Fatal error:  Call to undefined method Auth::render_page() in /Users/administrator/Dropbox/assets/application/controllers/auth.php on line 435
 [12-May-2014 11:16:31 America/Chicago] PHP Fatal error:  Call to undefined method Auth::render_page() in /Users/administrator/Dropbox/assets/application/controllers/auth.php on line 435
+[22-Oct-2014 14:06:39 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/edit.php on line 64
+[22-Oct-2014 14:07:44 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/edit.php on line 64
+[22-Oct-2014 14:10:49 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/details.php on line 43
+[22-Oct-2014 14:10:49 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/details.php on line 43
+[22-Oct-2014 14:12:54 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/details.php on line 43
+[22-Oct-2014 14:12:54 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/details.php on line 43
+[22-Oct-2014 14:12:55 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/details.php on line 43
+[22-Oct-2014 14:12:55 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/details.php on line 43
+[22-Oct-2014 14:12:58 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/details.php on line 43
+[22-Oct-2014 14:12:58 America/Chicago] PHP Fatal error:  Call to undefined function get_value() in /Users/administrator/Sites/assets/application/views/asset/details.php on line 43

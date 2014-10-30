@@ -11,6 +11,7 @@ class Asset_model extends CI_Model{
 	var $serial_number;
 	var $status;
 	var $source;
+	var $po;
 	var $year_removed;
 	var $year_acquired;
 
@@ -51,16 +52,20 @@ class Asset_model extends CI_Model{
 		if($this->input->post('type')){
 			$this->type = $this->input->post('type');
 		}
-		
+
 		if($this->input->post('serial_number')){
 			$this->serial_number = $this->input->post('serial_number');
 		}
-		
+
 		if($this->input->post('year_removed')){
 			$this->year_removed = $this->input->post('year_removed');
 		}
 		if($this->input->post('year_acquired')){
 			$this->year_acquired = $this->input->post('year_acquired');
+		}
+
+		if($this->input->post("po")){
+		    $this->po = $this->input->post("po");
 		}
 
 		if($this->input->post('source')){

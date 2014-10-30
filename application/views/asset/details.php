@@ -40,3 +40,8 @@
 <p>
 	<b>Developer:</b>&nbsp;<a href="<?=site_url("developer/view/$asset->kDeveloper"); ?>"><?=$developer?></a>
 </p>
+<? if(getValue($asset,"po")):?>
+<p>
+<b>Purchase Order: </b>&nbsp;<a href="http://order.server.fsmn/order/view/<?=$asset->po;?>" target="_blank"><?=$asset->po;?></a>
+</p>
+<? endif;

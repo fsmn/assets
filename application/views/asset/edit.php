@@ -60,6 +60,12 @@
 		</span>
 	</p>
 	<p>
+	<label for="po">Purchase Order</label>
+	<span id="poField"><input
+			type="text" id="po" name="po" size="5"
+			value="<?=getValue($asset,"po");?>" /></span>
+	</p>
+	<p>
 		<? if($action == "update"){ ?>
 		<input type="hidden" name="ajax" id="ajax" value="1" /> <span
 			class="button asset_save">Save</span>&nbsp;<span
