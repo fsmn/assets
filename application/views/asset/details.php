@@ -42,6 +42,6 @@
 </p>
 <? if(getValue($asset,"po")):?>
 <p>
-<b>Purchase Order: </b>&nbsp;<a href="http://order.server.fsmn/order/view/<?=$asset->po;?>" target="_blank"><?=$asset->po;?></a>
+<b>Purchase Order: </b>&nbsp;<a href="http://orders.fsmn.org/order/view/<?=$asset->po;?>" target="_blank"><?=$asset->po;?></a>
 </p>
 <? endif;
