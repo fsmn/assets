@@ -1,4 +1,4 @@
-/uploads
+/uploads/*
 .settings
 /application/logs
 /application/cache
