@@ -205,7 +205,7 @@ class Asset_model extends CI_Model{
 			$this->db->where("developer.kDeveloper = $kDeveloper");
 		}
 		//default to show only active assets.
-		$this->db->where("asset.status", "active");
+		//$this->db->where("asset.status", "active");
 
 		$query = $this->db->get();
 		$output = $query->result();

@@ -1,7 +1,7 @@
 <?php #asset_search.inc.php
 ?>
 <form id="asset_search" name="asset_search"
-	action="<? echo site_url("asset/$action"); ?>" method="post">
+	action="<? echo site_url("asset/$action"); ?>" method="get">
 	<p>
 		<label for="developer">Developer</label> <span id='developerField'> <?php echo form_dropdown('kDeveloper', $developerPairs, $this->session->userdata("kDeveloper"), 'id="kDeveloper"');?>
 		</span>
